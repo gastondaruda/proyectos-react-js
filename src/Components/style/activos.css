@@ -1,0 +1,25 @@
+.activosContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem 5rem;
+}
+.activoDiv{
+    margin: 0 1rem;
+}
+.activosImg{
+    width: 20rem;
+    min-height: 15rem;
+    max-height: 15rem;
+}
+.activosTitle{
+    color: #1F497D;
+    margin: 3rem auto;
+}
+.activosList{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}

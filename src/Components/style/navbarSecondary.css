@@ -1,0 +1,36 @@
+.navbarSecondary{
+    width: 100%;
+    background-color: #1F497D;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.SecondUl{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0 5rem;
+    height: 10rem;
+}
+.secondItemList{
+    color: #fff;
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: .8rem;
+}
+.secondItemList > h5{
+    margin-top: 1.5rem;
+}
+.secondItemList:hover{
+    text-decoration: underline #fff;
+    cursor: pointer;
+}
+.ListIcon{
+    font-size: 4rem;
+}

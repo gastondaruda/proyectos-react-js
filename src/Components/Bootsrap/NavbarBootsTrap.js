@@ -5,32 +5,31 @@ import { Link } from 'react-router-dom';
 import Logo from "../../imagenes/react.png";
 
 function ColorSchemesExample() {
-  return (
+
+const proyectos = [
+    {to: "/Calculadora", navItem: "Calculadora"},
+    {to: "/ListaDeTareas", navItem: "Lista de tareas"},
+    {to:"/RandomQuote", navItem: "Random Quote"},
+    {to: "/weatherApi", navItem: "Weather Api"}
+]
+    const proyectosHtml = (val) => {
+        return(
+                <Link to={val.to}>
+                    <li className="navItemList">{val.navItem}</li>
+                </Link>
+        )
+    }
+
+return (
     <>
         <Navbar bg="dark" variant="dark">
             <Container>
             <Navbar.Brand href="#home">Proyectos con React Js</Navbar.Brand>
             <Nav className="me-auto">
-            <Link to="/Calculadora">
-                        <li className="navItemList">Calculadora</li>
-                    </Link>
-                    <Link to="/weatherApi">
-                        <li className="navItemList">Weather Api</li>
-                    </Link>
-                    <Link to="/Sustentabilidad">
-                        <li className="navItemList">Proyecto 3</li>
-                    </Link>
-                    <Link to="/Inversores">
-                        <li className="navItemList">Proyecto 4</li>
-                    </Link>
-                    <Link to="/Rrhh">
-                        <li className="navItemList">Proyecto 5</li>
-                    </Link>
-                
+                {proyectos.map(prod => proyectosHtml(prod))}
             </Nav>
             </Container>
         </Navbar>
-
     </>
 );
 }
